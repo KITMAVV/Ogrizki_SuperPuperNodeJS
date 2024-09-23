@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff8e1;
+    color: #5d4037;
+    padding: 9px 50px;
+    font-size: 58px;
+    font-weight: bold;
+    height: 70px;
+}
+
+nav {
+    background-color: #f3e5f5;
+    padding: 18px;
+    height: 40px;
+    text-align: left;
+}
+
+nav button {
+    background-color: #eddbdb;
+    color: #77554b;
+    border: none;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 1em;
+    width: 210px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.09) 0px 3px 6px;
+    transition: transform 0.2s ease, background-color 1s ease;
+}
+
+nav button:active {
+    transform: scale(1.1);
+}
+
+nav button:hover {
+    background-color: #bbdefb;
+}
+
+.banner {
+    position: relative;
+    background-color: #c2e9f6;
+    height: 705px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #ede7f6;
+    color: #616161;
+    text-align: center;
+    padding: 20px 0;
+    height: 20px;
+}
+
+.pane {
+    position: absolute;
+    top: 0;
+    left: -340px;
+    width: 300px;
+    height: 100%;
+    background-color: #d1c4e9;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.pane.open {
+    left: 0;
+}
+
+
+
+
+.toggle-btn {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 100%;
+    background-color: #bbdefb;
+    border: 1px solid rgba(93, 64, 55, 0.27);
+    color: #5d4037;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #a1cef3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(177, 158, 158, 0.48);
+    border-radius: 10px;
+    border: 2px solid #b1b1b1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dda5a5;
+}
